@@ -145,7 +145,7 @@ onUnmounted(() => {
             </div>
 
             <h1>AgTech Program</h1>
-            <p class="subtitle">Tracking smart-farming program progress to graduation day</p>
+            <p class="subtitle">Tracking program progress to completion date</p>
 
             <div id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" :aria-valuenow="roundedProgress">
                 <div id="progress-fill" :style="{ width: progressPercentage + '%' }"></div>
