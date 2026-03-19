@@ -1,38 +1,51 @@
-# .
+# Precise Program Progress
 
-This template should help get you started developing with Vue 3 in Vite.
+A small Vue 3 + Vite web app for tracking progress toward a time-based goal (e.g., a countdown or "percent complete" indicator) with an emphasis on precise, continuously-updating progress.
 
-## Recommended IDE Setup
+## Live site
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- https://kdrolle594.github.io/Precise-Program-Progress/
 
-## Recommended Browser Setup
+## Tech stack
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Vue 3
+- Vite
+- Deployed via GitHub Pages (`gh-pages`)
 
-## Customize configuration
+## Getting started
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+### Install
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Run locally (dev)
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Build
 
 ```sh
 npm run build
 ```
+
+### Preview production build
+
+```sh
+npm run preview
+```
+
+## Deploy
+
+This project is configured to deploy to GitHub Pages.
+
+```sh
+npm run deploy
+```
+
+## Notes
+
+- If you fork/rename the repo, update `homepage` in `package.json` and the `base` setting in `vite.config.js` to match your GitHub Pages path.
