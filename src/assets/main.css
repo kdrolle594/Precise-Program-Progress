@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Kenney Future";
+    src: url("@/assets/Font/Kenney Future.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Kenney Future Narrow";
+    src: url("@/assets/Font/Kenney Future Narrow.ttf") format("truetype");
+    font-display: swap;
+}
+
+:root {
+    --agtech-green-900: #0f3d2e;
+    --agtech-green-700: #1f7a4f;
+    --agtech-green-500: #37b36b;
+    --agtech-lime-300: #a8ea6a;
+    --agtech-soil-100: #f4f8ef;
+    --agtech-card: #f7fcf3;
+    --text-strong: #123429;
+    --text-soft: #2d5f4b;
+    --font-display: "Kenney Future", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: "Kenney Future Narrow", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: var(--font-body);
+    background:
+        radial-gradient(circle at 15% 20%, rgba(168, 234, 106, 0.25), transparent 32%),
+        radial-gradient(circle at 85% 10%, rgba(55, 179, 107, 0.2), transparent 38%),
+        linear-gradient(160deg, #edf7e8 0%, #d8efdd 45%, #c6e7d2 100%);
+    color: var(--text-strong);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(19, 84, 56, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(19, 84, 56, 0.08) 1px, transparent 1px);
+    background-size: 32px 32px;
+    pointer-events: none;
+}
